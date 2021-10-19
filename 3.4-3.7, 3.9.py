@@ -24,19 +24,22 @@ print(f"Привет, приходи на ужин, {guests[4]}.")
 print(f"Привет, приходи на ужин, {guests[5]}.")
 
 print("Упс, мы можем пригласить только двух гостей.")
-while len(guests) > 2:
-    minus = guests.pop(0)
-    print(f"Извини, {minus}, я отменяю своё приглашение.")
+print(f"{guests.pop()}, пошёл нафиг, мы больше не друзья!")
+print(f"{guests.pop()}, пошёл нафиг, мы больше не друзья!")
+print(f"{guests.pop()}, пошёл нафиг, мы больше не друзья!")
+print(f"{guests.pop()}, пошёл нафиг, мы больше не друзья!")
 
 print(f"Предложение насчёт ужина в силе, {guests[0]}.")
 print(f"Предложение насчёт ужина в силе, {guests[1]}.")
 
 print("Количество приглашённых людей на ужин - " + str(len(guests)))
+
 print(sorted(guests))
 
 guests.reverse()
 print(guests)
 
-while len(guests) > 0:
-    del guests[0]
+del guests[0]
+del guests[0]
 print(guests)
+
