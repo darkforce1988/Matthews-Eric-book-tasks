@@ -2,9 +2,9 @@ guests = ['paSiYupa', 'санька', 'алик']
 for i in range(0, len(guests)):
     guests[i] = guests[i].title()
 
-print(f"Привет, приходи на ужин, {guests[0]}.")
-print(f"Привет, приходи на ужин, {guests[1]}.")
-print(f"Привет, приходи на ужин, {guests[2]}.")
+for guest in guests:
+    print(f"Привет, приходи на ужин, {guest}.")
+print("\nВы все красавчики\n")
 
 print(f"Однако, {guests[0]} не сможет прийти из-за диареи.")
 
@@ -42,4 +42,3 @@ print(guests)
 del guests[0]
 del guests[0]
 print(guests)
-
