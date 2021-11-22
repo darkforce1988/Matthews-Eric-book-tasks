@@ -21,4 +21,4 @@ glossary = {
                 ' variables.',
 }
 for key, value in glossary.items():
-    print(f"{key.title()}: {value.title()}")
+    print(f"{key.title()}:\n\t{value}")
