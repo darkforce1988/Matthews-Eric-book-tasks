@@ -1,6 +1,6 @@
 age = int(input("Enter your age: "))
 if age < 3:
-    ticket_price = 'free'
+    ticket_price = "free"
 elif age < 13:
     ticket_price = "10$"
 else:
