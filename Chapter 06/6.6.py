@@ -1,8 +1,19 @@
-ppl_for_vote = ['jen', 'sarah', 'edward', 'phil', 'paciupa', 'sarah']
-people_already_voted = []
-for ppl in ppl_for_vote:
-    if ppl not in people_already_voted:
-        print(f"{ppl.title()}, do you wanna take part in voting?")
-        people_already_voted.append(ppl)
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+people_voting = []
+for people in favorite_languages:
+    people_voting.append(people)
+
+people_voting.append('max')
+people_voting.append('paciupa')
+
+for people in people_voting:
+    if people in favorite_languages:
+        print(f"{people.title()}, thank you for responding!")
     else:
-        print(f"{ppl.title()}, thanks for your vote!")
+        print(f"{people.title()}, we invite you to take the poll!")
