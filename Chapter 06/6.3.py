@@ -8,8 +8,12 @@ glossary = {
     'method': 'A methods in python are somewhat similar to a functions, '
               'except it is associated with object/classes.',
 }
+
 print(
-    '\t',
-    glossary['list'], glossary['comment'],
-    glossary['dictionary'], glossary['string'],
-    glossary['method'], sep='\n\t')
+    f"List: {glossary['list']}",
+    f"Comment: {glossary['comment']}",
+    f"String: {glossary['dictionary']}",
+    f"Dictionary: {glossary['string']}",
+    f"Method: {glossary['method']}",
+    sep='\n'
+)
