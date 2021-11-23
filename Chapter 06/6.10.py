@@ -5,6 +5,7 @@ fav_numbers = {
     'Dennis': [],
     'Max': ['100', '50']
 }
+
 for name, numbers in fav_numbers.items():
     if len(numbers) == 1:
         ending = 'favorite number is:'
