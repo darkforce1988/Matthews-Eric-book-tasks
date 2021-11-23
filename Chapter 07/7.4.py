@@ -9,4 +9,4 @@ while topping != 'quit':
     toppings.append(topping)
 
 print(f"We'll make your pizza ready in a short time.\nSelected "
-    f"'toppings: {toppings}.")
+      f"'toppings: {toppings}.")
