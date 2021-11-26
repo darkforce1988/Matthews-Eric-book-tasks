@@ -13,12 +13,6 @@ for name, numbers in fav_numbers.items():
     elif len(numbers) == 0:
         print(f"{name} have no favorite numbers.")
     else:
-        list_of_numbers = str(numbers[0])
-        for number in numbers[1:]:
-            list_of_numbers += ', ' + str(number)
-        print(f"{name}'s favorite numbers are: {list_of_numbers}.")
+        print(f"{name}'s favorite numbers are: {', '.join(map(str, numbers))}.")
 
-# else:
-#   print(f"{name}'s favorite numbers are: {', '.join(map(str, numbers))}.")
-#
-# print(*numbers, sep=', ')
+#       print(*numbers, sep=', ')
