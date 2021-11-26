@@ -3,7 +3,7 @@ finished_sandwiches = []
 
 while sandwich_orders:
     sandwich = sandwich_orders.pop()
-    print(f"I made you {sandwich.title()}.")
+    print(f"I made you a {sandwich.title()}.")
     finished_sandwiches.append(sandwich)
 
 print("\nThe following sandwiches have been made:")

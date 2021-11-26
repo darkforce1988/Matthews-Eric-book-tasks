@@ -2,7 +2,8 @@ message = "When you are ready to make your order - type 'quit'."
 message += "\nPlease enter a topping for your pizza: "
 topping = ""
 toppings = []
-while topping != 'quit':
+
+while True:
     topping = input(message)
     if topping == 'quit':
         break

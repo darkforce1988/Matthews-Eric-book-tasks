@@ -3,7 +3,7 @@ sandwich_orders = ['pastrami', 'egg sandwich', 'pastrami',
                    ]
 finished_sandwiches = []
 
-print("Sorry, we can't make 'pastrami' sandwich for You!\n")
+print("Sorry, we can't make 'Pastrami' sandwich for You!\n")
 
 while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')

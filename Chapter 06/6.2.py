@@ -1,9 +1,9 @@
 fav_numbers = {
-    'Alex': '3',
-    'Konstantine': '9',
-    'Alik': '21',
-    'Dennis': '33',
-    'Max': '100',
+    'Alex': 3,
+    'Konstantine': 9,
+    'Alik': 21,
+    'Dennis': 33,
+    'Max': 100,
 }
 
 print(f"Alex favorite number is {fav_numbers['Alex']}")

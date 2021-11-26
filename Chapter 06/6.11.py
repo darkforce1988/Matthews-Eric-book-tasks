@@ -21,10 +21,11 @@ cities = {
     }
 }
 
-for city, infos in cities.items():
-    country = infos['country']
-    population = infos['population']
-    fact = infos['fact']
+for city, info in cities.items():
+    country = info['country']
+    population = info['population']
+    fact = info['fact']
+
     print(f"{city} info:")
     print(f"\tThis city is situated in {country}.")
     print(f"\tPopulation of this city is {population}.")

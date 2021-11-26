@@ -20,5 +20,6 @@ glossary = {
     'operator': 'Operators are used to perform operations on values and'
                 ' variables.',
 }
+
 for key, value in glossary.items():
     print(f"{key.title()}:\n\t{value}")
