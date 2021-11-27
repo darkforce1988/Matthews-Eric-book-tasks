@@ -1,6 +1,7 @@
 guests = ['paSiYupa', 'санька', 'алик']
-for i in range(0, len(guests)):
-    guests[i] = guests[i].title()
+
+for index, value in enumerate(guests):
+    guests[index] = value.title()
 
 for guest in guests:
     print(f"Привет, приходи на ужин, {guest}.")
