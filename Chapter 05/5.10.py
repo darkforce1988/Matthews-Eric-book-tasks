@@ -5,7 +5,7 @@ for user in new_users:
         print(f"User '{user}' already exists, choose another user name")
     else:
         print(f"You can use '{user}' user name")
-        
+
 current_users = ['Max', 'JAN', 'kosTYA', 'aliK', 'Romik']
 current_users_lower = []
 for user_lower in current_users:
