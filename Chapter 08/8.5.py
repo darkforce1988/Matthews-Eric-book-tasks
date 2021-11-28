@@ -8,4 +8,4 @@ print()
 describe_city(city='Chania')
 print()
 
-describe_city(city='Moscow')
+describe_city(city='Moscow', country='Russia')
