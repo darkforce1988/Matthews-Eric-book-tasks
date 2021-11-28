@@ -1,5 +1,13 @@
-def make_album(singer_name, album_name):
-    album_information = {'singer': singer_name, 'album': album_name}
+def make_album(singer_name, album_name, number_of_tracks=None):
+    if number_of_tracks:
+        album_information = {'singer': singer_name,
+                             'album': album_name,
+                             'tracks': number_of_tracks,
+                             }
+    else:
+        album_information = {'singer': singer_name,
+                             'album': album_name,
+                             }
     return album_information
 
 
@@ -10,4 +18,7 @@ album_dictionary = make_album('System of a down', 'Mesmerise')
 print(album_dictionary)
 
 album_dictionary = make_album('Bon Jovi', 'Have a nice day')
+print(album_dictionary)
+
+album_dictionary = make_album('Korn', 'Untouchables', 14)
 print(album_dictionary)
