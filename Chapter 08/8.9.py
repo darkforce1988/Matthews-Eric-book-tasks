@@ -1,5 +1,5 @@
-def show_messages(showing_message):
-    for message in showing_message:
+def show_messages(showing_messages):
+    for message in showing_messages:
         print(message)
 
 
