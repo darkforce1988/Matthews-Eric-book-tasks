@@ -1,12 +1,12 @@
-def sandwich_describe(*components):
+def describe_sandwich(*components):
     print("The components of your sandwich:\n")
     for component in components:
         print(f"\t- {component}")
     print()
 
 
-sandwich_describe('ketchup')
+describe_sandwich('ketchup')
 
-sandwich_describe('ketchup', 'ham')
+describe_sandwich('ketchup', 'ham')
 
-sandwich_describe('ketchup', 'ham', 'egg', 'chicken meat')
+describe_sandwich('ketchup', 'ham', 'egg', 'chicken meat')
