@@ -15,4 +15,4 @@ make_s.make_shirt('xxl', 'Mortal kombat')
 print()
 
 from making_shirts import *
-making_shirts.make_shirt('xxxxxxxxl', 'Mortal kombat')
+make_shirt('xxxxxxxxl', 'Mortal kombat')
