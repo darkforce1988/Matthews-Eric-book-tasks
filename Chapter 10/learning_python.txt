@@ -1,0 +1,3 @@
+In Python you can do web development.
+In Python you can do data analytics.
+In Python you can develop games.
