@@ -1,5 +1,6 @@
 filename = 'guest.txt'
+
+guest_name = input('Здравствуйте, введите ваше имя: ')
+
 with open(filename, 'w', encoding='UTF-8') as file_object:
-    guest_name = input('Здравствуйте, введите ваше имя: ')
-    message = guest_name + ", добро пожаловать!"
-    file_object.write(message)
+    file_object.write(guest_name)
