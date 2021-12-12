@@ -1,5 +1,5 @@
 filename = 'guest_book.txt'
-with open(filename, 'w') as file_object:
+with open(filename, 'w', encoding='UTF-8') as file_object:
     while True:
         guest_name = input('Здравствуйте, введите ваше имя. '
                            'Для выхода введите "q": ')

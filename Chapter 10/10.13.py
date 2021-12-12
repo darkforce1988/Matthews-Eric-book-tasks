@@ -5,7 +5,7 @@ def get_stored_username():
     """Получает хранимое имя пользователя, если оно существует."""
     filename = 'username.json'
     try:
-        with open(filename) as f:
+        with open(filename, encoding='UTF-8') as f:
             username = json.load(f)
     except FileNotFoundError:
         return None
@@ -17,7 +17,7 @@ def get_new_username():
     """Запрашивает новое имя пользователя."""
     username = input("What is your name? ")
     filename = 'username.json'
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='UTF-8') as f:
         json.dump(username, f)
         return username
 
