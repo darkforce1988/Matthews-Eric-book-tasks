@@ -8,4 +8,4 @@ while True:
     message = guest_name + ", добро пожаловать!"
     print(message)
     with open(filename, 'a', encoding='UTF-8') as file_object:
-        file_object.write(message + '\n')
+        file_object.write(guest_name + '\n')
