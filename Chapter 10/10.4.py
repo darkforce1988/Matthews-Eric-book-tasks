@@ -5,7 +5,6 @@ while True:
                        'Для выхода введите "q": ')
     if guest_name == 'q':
         break
-    message = guest_name + ", добро пожаловать!"
-    print(message)
+    print(f"{guest_name}, добро пожаловать!")
     with open(filename, 'a', encoding='UTF-8') as file_object:
         file_object.write(guest_name + '\n')
