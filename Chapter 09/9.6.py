@@ -38,5 +38,5 @@ class IceCreamStand(Restaurant):
             print(f"\t- {flavor}")
 
 
-my_ice_cream = IceCreamStand('Power', 'Russian')
-my_ice_cream.show_flavors_list()
+ice_cream_stand = IceCreamStand('Power', 'Ice cream')
+ice_cream_stand.show_flavors_list()
