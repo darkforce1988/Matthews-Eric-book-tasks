@@ -26,21 +26,16 @@ class Restaurant():
 
 
 class IceCreamStand(Restaurant):
-    """docstring for IceCreamStand"""
+    """Model of an IceCreamStand"""
     def __init__(self, restaurant_name, cuisine_type):
         super().__init__(restaurant_name, cuisine_type)
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-        flavors = ['lime', 'chocolate', 'strawberry']
-        self.flavors = flavors
-        flavor = ''
-        self.flavor = flavor
+        self.flavors = ['lime', 'chocolate', 'strawberry']
 
     def show_flavors_list(self):
-        """show the list of available flavors"""
+        """Show the list of available flavors"""
         print("Available flavors for your ice cream are:")
-        for self.flavor in self.flavors:
-            print(f"\t- {self.flavor}")
+        for flavor in self.flavors:
+            print(f"\t- {flavor}")
 
 
 my_ice_cream = IceCreamStand('Power', 'Russian')
