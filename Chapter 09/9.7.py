@@ -40,14 +40,12 @@ class Admin(User):
                       'allowed user deletion',
                       ]
         self.privileges = privileges
-        privilege = ''
-        self.privilege = privilege
 
     def show_privileges(self):
         """Show admin privileges"""
         print("Do not write spam messages! Admin have the following rights:")
-        for self.privilege in self.privileges:
-            print(f"\t- {self.privilege}")
+        for privilege in self.privileges:
+            print(f"\t- {privilege}")
 
 
 admin_account = Admin('Max', 'Auramenka', 'titan@tut.by', '19.12.2021')
