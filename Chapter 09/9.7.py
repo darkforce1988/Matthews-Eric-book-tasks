@@ -37,10 +37,10 @@ class Admin(User):
     def __init__(self, first_name, last_name, email_address, register_date):
         super().__init__(first_name, last_name, email_address, register_date)
         privileges = [
-                      'allowed message edition',
-                      'allowed user banning',
-                      'allowed user deletion',
-                      ]
+            'allowed message edition',
+            'allowed user banning',
+            'allowed user deletion',
+            ]
         self.privileges = privileges
 
     def show_privileges(self):
