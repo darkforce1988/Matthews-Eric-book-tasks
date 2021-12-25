@@ -1,5 +1,6 @@
 class User():
     """A class to model a user"""
+
     def __init__(self, first_name, last_name, email_address, register_date):
         """Initialize first, last name, email and register date attributes"""
         self.first_name = first_name
@@ -32,6 +33,7 @@ class User():
 
 class Privileges():
     """A class to model a privileges"""
+
     def __init__(self):
         privileges = [
                       'allowed message edition',
@@ -49,6 +51,7 @@ class Privileges():
 
 class Admin(User):
     """A class to model an admin"""
+
     def __init__(self, first_name, last_name, email_address, register_date):
         super().__init__(first_name, last_name, email_address, register_date)
         self.privileges_list = Privileges()

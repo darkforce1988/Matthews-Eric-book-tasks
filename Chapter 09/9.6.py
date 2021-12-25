@@ -27,6 +27,7 @@ class Restaurant():
 
 class IceCreamStand(Restaurant):
     """Model of an IceCreamStand"""
+
     def __init__(self, restaurant_name, cuisine_type):
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = ['lime', 'chocolate', 'strawberry']
