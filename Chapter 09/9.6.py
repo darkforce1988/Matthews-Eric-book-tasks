@@ -28,7 +28,7 @@ class Restaurant():
 class IceCreamStand(Restaurant):
     """Model of an IceCreamStand"""
 
-    def __init__(self, restaurant_name, cuisine_type):
+    def __init__(self, restaurant_name, cuisine_type='ice cream'):
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = ['lime', 'chocolate', 'strawberry']
 
@@ -39,5 +39,5 @@ class IceCreamStand(Restaurant):
             print(f"\t- {flavor}")
 
 
-ice_cream_stand = IceCreamStand('Power', 'Ice cream')
+ice_cream_stand = IceCreamStand('Power')
 ice_cream_stand.show_flavors_list()
