@@ -39,7 +39,7 @@ class Privileges():
             'allowed message edition',
             'allowed user banning',
             'allowed user deletion',
-            ]
+        ]
         self.privileges = privileges
 
     def show_privileges(self):
