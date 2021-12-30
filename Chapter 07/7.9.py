@@ -1,6 +1,11 @@
-sandwich_orders = ['pastrami', 'egg sandwich', 'pastrami',
-                   'chicken sandwich', 'ham sandwich', 'pastrami',
-                   ]
+sandwich_orders = [
+    'pastrami',
+    'egg sandwich',
+    'pastrami',
+    'chicken sandwich',
+    'ham sandwich',
+    'pastrami',
+]
 finished_sandwiches = []
 
 print("Sorry, we can't make 'Pastrami' sandwich for You!\n")
