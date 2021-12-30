@@ -9,7 +9,7 @@ car = view_car_information(
     'Turbo-R',
     color='grey',
     pedal_extenders=True,
-    )
+)
 
 print("Your car information:")
 for car_info_key, car_info_value in car.items():

@@ -11,7 +11,7 @@ user_profile = build_profile(
     hobby='gym',
     nickname='F0rce',
     favorite_game='Dota 2',
-    )
+)
 
 full_name = user_profile['first_name'] + ' ' + user_profile['last_name']
 print(f"{full_name.title()}'s information:\n{user_profile}.")
