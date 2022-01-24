@@ -1,3 +1,4 @@
+import sys
 import json
 
 
@@ -9,6 +10,13 @@ def get_stored_username():
             username = json.load(f)
     except FileNotFoundError:
         return None
+    except json.decoder.JSONDecodeError:
+        username = input("What is your name? ")
+        filename = 'username.json'
+        with open(filename, 'w', encoding='UTF-8') as f:
+            json.dump(username, f)
+            print(f"We'll remember you when you come back, {username}!")
+            sys.exit()
     else:
         return username
 
