@@ -15,4 +15,5 @@ while my_ticket != win_values_list:
         values_for_try = choice(values)
         my_ticket.append(values_for_try)
     tries += 1
-print(f"Amount of tries for ticket match: {tries}")
+print(f"Winning ticket is: {my_ticket}\n"
+      f"Amount of tries to win the lottery: {tries}")
