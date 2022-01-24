@@ -8,18 +8,21 @@ class Die:
         self.sides = sides
 
     def roll_die(self):
-        """Print a random number between 1 and the number of die sides"""
-        print(randint(1, self.sides))
+        """Return a random number between 1 and the number of die sides"""
+        return randint(1, self.sides)
 
 
-square_1 = Die()
-for tries in range(10):
-    square_1.roll_die()
+def make_die_throws(tries, sides=6):
+    """Print a result of die throws with number of tries"""
+    die = Die(sides)
+    for try_ in range(1, tries + 1):
+        print(f"Throw of a {sides}-sided die №{try_}: "
+              f"{die.roll_die()}")
+    print()
 
-square_2 = Die(10)
-for tries in range(10):
-    square_2.roll_die()
 
-square_3 = Die(20)
-for tries in range(10):
-    square_3.roll_die()
+make_die_throws(10)
+
+make_die_throws(10, 10)
+
+make_die_throws(10, 20)
