@@ -34,12 +34,8 @@ class User():
 class Privileges():
     """A class to model a privileges"""
 
-    def __init__(self):
-        privileges = [
-            'allowed message edition',
-            'allowed user banning',
-            'allowed user deletion',
-        ]
+    def __init__(self, privileges):
+
         self.privileges = privileges
 
     def show_privileges(self):
@@ -54,7 +50,12 @@ class Admin(User):
 
     def __init__(self, first_name, last_name, email_address, register_date):
         super().__init__(first_name, last_name, email_address, register_date)
-        self.privileges_list = Privileges()
+        privileges = [
+            'allowed message edition',
+            'allowed user banning',
+            'allowed user deletion',
+        ]
+        self.privileges_list = Privileges(privileges)
 
 
 admin_account = Admin('Max', 'Auramenka', 'titan@tut.by', '19.12.2021')
