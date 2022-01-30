@@ -1,19 +1,19 @@
 from random import choice
 
-values = [1, 8, 22, 'a', 't', 3, 5, 2, 11, 17, 21, 10, 'x', 'y', 'z']
+values_pool = [1, 8, 22, 'a', 't', 3, 5, 2, 11, 17, 21, 10, 'x', 'y', 'z']
+values_combination_lenght = 4
 
-win_values_list = []
-for amount_of_win_values in range(4):
-    win_value = choice(values)
-    win_values_list.append(win_value)
+win_values = []
+for i in range(values_combination_lenght):
+    win_value = choice(values_pool)
+    win_values.append(win_value)
 
 my_ticket = []
 tries = 0
-while my_ticket != win_values_list:
+while my_ticket != win_values:
     my_ticket.clear()
-    for values_for_try in range(4):
-        values_for_try = choice(values)
-        my_ticket.append(values_for_try)
+    for i in range(values_combination_lenght):
+        my_ticket.append(choice(values_pool))
     tries += 1
-print(f"Winning ticket is: {my_ticket}\n"
+print(f"Winning ticket is: {win_values}\n"
       f"Amount of tries to win the lottery: {tries}")
