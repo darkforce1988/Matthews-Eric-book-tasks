@@ -12,6 +12,6 @@ def pick_combination(values_pool, combination_length=4):
     return combination_list
 
 
-my_ticket = pick_combination(values_pool)
+win_ticket = pick_combination(values_pool)
 print(f"Any ticket matching these four numbers or letters wins a prize:"
-      f"\n{my_ticket}")
+      f"\n{win_ticket}")
