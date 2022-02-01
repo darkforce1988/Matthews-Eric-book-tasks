@@ -1,10 +1,12 @@
 filename = 'guest_book.txt'
 
 while True:
-    guest_name = input('Здравствуйте, введите ваше имя. '
-                       'Для выхода введите "q": ')
+    guest_name = input("Hello! Please enter your name. "
+                       "Enter 'q' to quit: ")
     if guest_name == 'q':
         break
-    print(f"{guest_name}, добро пожаловать!")
+    message = guest_name + ", welcome!"
+    print(message)
     with open(filename, 'a', encoding='UTF-8') as file_object:
-        file_object.write(guest_name + '\n')
+        file_object.write(message + "\n")
+    print(f"Added a greeting message for {guest_name} to a guest book.\n")
