@@ -1,5 +1,11 @@
 from random import choice
 
+print("Welcome to M&J lottery! There are lottery rules:\n"
+      "- you'll get a ticket with 5 random values from the pool of 15 values;\n"
+      "- we'll compare the values of your ticket with win values\n"
+      "- just consecutive mathes will be counted!\n"
+      "- keep in mind that your odds of winning are TINY!!!\n")
+
 values_pool = (1, 8, 22, 'a', 't', 3, 5, 2, 11, 17, 21, 10, 'x', 'y', 'z')
 
 
